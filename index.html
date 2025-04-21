@@ -1,0 +1,83 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vencord Plugins | Discord Bot</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+</head>
+<body class="bg-gray-900 text-white">
+
+  <!-- Hero Section -->
+  <section class="text-center py-20 px-4">
+    <h1 class="text-5xl font-bold text-blue-400">Vencord Plugins</h1>
+    <p class="mt-4 text-lg max-w-2xl mx-auto text-gray-300">
+      The ultimate Discord bot offering safe and legal Vencord plugin access—featuring Nekos API, utilities, and more.
+    </p>
+    <a href="https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot" class="mt-8 inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition">
+      Invite Bot
+    </a>
+  </section>
+
+  <!-- Features Section -->
+  <section class="bg-gray-800 py-16">
+    <div class="max-w-5xl mx-auto px-4 grid gap-8 grid-cols-1 md:grid-cols-3">
+      <div class="bg-gray-700 p-6 rounded-xl shadow-md">
+        <h2 class="text-xl font-bold text-blue-300 mb-2">Legal Plugins</h2>
+        <p class="text-gray-300">All plugins offered are safe, transparent, and follow Discord’s ToS—no sketchy stuff.</p>
+      </div>
+      <div class="bg-gray-700 p-6 rounded-xl shadow-md">
+        <h2 class="text-xl font-bold text-blue-300 mb-2">Nekos API Integration</h2>
+        <p class="text-gray-300">Fun and engaging content like anime GIFs, neko images, and more—powered by Nekos.life.</p>
+      </div>
+      <div class="bg-gray-700 p-6 rounded-xl shadow-md">
+        <h2 class="text-xl font-bold text-blue-300 mb-2">Easy Plugin Commands</h2>
+        <p class="text-gray-300">Use simple commands to browse, enable, or disable plugins directly within Discord.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="text-center py-20 px-4">
+    <h2 class="text-3xl font-bold mb-4">Ready to power up your Discord experience?</h2>
+    <a href="https://discord.gg/YOUR_SUPPORT_SERVER" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition">
+      Join Support Server
+    </a>
+  </section>
+
+  <!-- Terms of Service -->
+  <section id="tos" class="bg-gray-800 py-16 px-4">
+    <div class="max-w-4xl mx-auto text-left">
+      <h2 class="text-2xl font-bold text-blue-400 mb-4">Terms of Service</h2>
+      <p class="text-gray-300 mb-4">
+        By using the Vencord Plugins bot, you agree to abide by Discord’s Terms of Service and Community Guidelines.
+        Vencord Plugins does not store any personal user data. All plugin usage is logged for moderation and debugging purposes only.
+      </p>
+      <p class="text-gray-300">
+        Users are responsible for ensuring that plugins used via the bot are appropriate for their communities.
+        Abuse or misuse of the bot will result in a permanent ban from the service.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-gray-500 text-sm">
+    © 2025 Vencord Plugins. Not affiliated with Discord or Vencord.
+  </footer>
+
+  <!-- Scroll to TOS Script -->
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('tos') === 'yes') {
+        const tosSection = document.getElementById('tos');
+        if (tosSection) {
+          tosSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
